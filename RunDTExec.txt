@@ -1,0 +1,4 @@
+cd "C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\" 
+
+
+"C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\dtexec.exe"  /ISServer \SSISDB\Servicing_Datamart_Projects\GNMA\LoadGNMADailyExport.dtsx /Server chdc-car-thsql1\datamartdev 
