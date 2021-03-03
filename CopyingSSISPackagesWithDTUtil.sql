@@ -27,7 +27,7 @@ SET NOCOUNT ON
 
 DECLARE @TargetServer sysname,  @SQLVersion char(4)
 
-SET @TargetServer = 'CHDC-CAR-THSQL2\DATAMARTDEV' 
+SET @TargetServer = 'TARGETSERVER' 
 
 SET @SQLVersion = left(cast(SERVERPROPERTY('productversion') as varchar),4)
 
