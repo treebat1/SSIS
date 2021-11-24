@@ -7,7 +7,7 @@ $ISNamespace = "Microsoft.SqlServer.Management.IntegrationServices"
 Write-Host "Connecting to server ..."  
 
 # Create a connection to the server  
-$sqlConnectionString = "Data Source=chdc-car-phsql2\datamarttest;Initial Catalog=master;Integrated Security=SSPI;"  
+$sqlConnectionString = "Data Source=ServerName;Initial Catalog=master;Integrated Security=SSPI;"  
 $sqlConnection = New-Object System.Data.SqlClient.SqlConnection $sqlConnectionString  
 
 # Create the Integration Services object  
@@ -16,7 +16,3 @@ $integrationServices = New-Object $ISNamespace".IntegrationServices" $sqlConnect
 # Provision a new SSIS Catalog  
 $catalog = New-Object $ISNamespace".Catalog" ($integrationServices, "SSISDB", "xxxx")  
 $catalog.Create()  
-
-
-
-P@assword1
